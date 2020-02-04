@@ -1,0 +1,9 @@
+version: '2'
+services:
+    gs1:
+        build: .
+        privileged: true
+        volumes:
+        - ./data:/data
+        - ./hosts:/config/hosts
+        # - ./secure-access:/var/lib/glusterd/secure-access
