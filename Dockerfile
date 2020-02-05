@@ -1,9 +1,9 @@
-FROM centos:7
-MAINTAINER Patrice FERLET <metal3d@gmail.com>
+FROM fedora:31
+LABEL maintainer="Leopere github@c.nixc.us"
 
-RUN yum install -y centos-release-gluster glusterfs-server && \
-    yum clean all && \
+RUN dnf install glusterfs-server -y && \
     mkdir -p /var/lib/glusterd/ && touch /var/lib/glusterd/secure-access
-COPY ./start.sh /entrypoint.sh /usr/bin/
+
+COPY ./sh/start ./sh/entrypoint /usr/bin/
 
 CMD ["start.sh"]

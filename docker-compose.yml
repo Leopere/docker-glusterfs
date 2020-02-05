@@ -4,6 +4,6 @@ services:
     build: .
     privileged: true
     volumes:
-      - ./data:/data
-      - ./hosts:/config/hosts
-      # - ./secure-access:/var/lib/glusterd/secure-access
+      - ./persist/data:/data
+      - ./persist/config/hosts:/config/hosts
+      # - ./persist/config/secure-access:/var/lib/glusterd/secure-access
