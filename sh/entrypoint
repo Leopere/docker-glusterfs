@@ -43,6 +43,6 @@ case $1 in
     peer_up
     ;;
   * )
-    bash
+    /bin/bash
     ;;
 esac

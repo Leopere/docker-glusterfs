@@ -6,4 +6,4 @@ RUN dnf install glusterfs-server -y && \
 
 COPY ./sh/start ./sh/entrypoint /usr/bin/
 
-CMD ["start.sh"]
+CMD ["start"]
