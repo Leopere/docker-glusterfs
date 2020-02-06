@@ -7,3 +7,8 @@ services:
       - ./persist/data:/data
       - ./persist/config/hosts:/config/hosts
       # - ./persist/config/secure-access:/var/lib/glusterd/secure-access
+    ports:
+      - '24007:24007'
+      - '24008:24008'
+      - '49152-49158:49152-49158'
+    restart: always
