@@ -17,6 +17,4 @@ services:
       - '49155:49155'
       - '49156:49156'
       - '49157:49157'
-      - '49158:49158'
-    network_mode: "host"
     restart: always
