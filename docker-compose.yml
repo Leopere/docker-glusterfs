@@ -5,7 +5,7 @@ services:
     privileged: true
     volumes:
       - ./persist/data:/data
-      - ./persist/config/hosts:/config/hosts
+      - ./persist/config/hosts:/etc/hosts
       # - ./persist/config/secure-access:/var/lib/glusterd/secure-access
     ports:
       - '24007:24007'
